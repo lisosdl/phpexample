@@ -1,0 +1,28 @@
+Array 객체
+
+const a = new Array(); // 생성자 방식
+const a = [];
+
+const a = new Array(1,2,3,4,5,6);
+const a = [1,2,3,4,5,6];
+
+생성자 방식으로 배열 객체를 만들때 인수가 1 -> 배열의 공간 갯수(반드시 정수, 1이상의 숫자)
+const a = new Array(3);
+[undefined, undefined, undefined];
+
+Array
+	.join 배열객체 -> 문자열로 결합(php = implode)
+	(<---> String.plit, php = explode)
+	
+	.reverse -> 배열의 순서를 반대로
+	.sort -> 오름차순 정렬
+	.slice(a, b) a이상 b미만 배열을 잘라서 복사
+	.splice -> 삭제 후 추가 (시작점, 삭제할 갯수, ...item - 추가할 데이터)
+	.concat -> 배열 객체 합치기 (php = array_merge)
+	.pop -> 배열 객체의 가장 마지막 요소를 제거 (php = array_pop) -> 반환값 -> 제거된 요소
+	.push -> 배열 배열 객체의 마지막에 요소를 추가 (php = array_push) -> 반환값 -> 추가 후의 배열의 갯수
+	.shift -> 배열객체의 가장 첫번째 요소를 제거 (php = array_shift) -> 반환값 -> 제거된 요소
+	.unshift -> 배열의 가장 첫번째에 요소를 추가 (php = array_unshift) -> 반환값 -> 추가 후의 배열의 갯수
+	.map -> 원 배열을 콜백 함수로 가공 후 변경된 배열을 반환 (php = array_map)
+	.filter -> 배열객체 데이터를 검증해서 검증에 통과된 배열만 반환
+	.forEach -> 배열 객체를 순회 조회(반환값 X)

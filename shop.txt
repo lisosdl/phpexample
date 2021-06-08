@@ -1,0 +1,23 @@
+1. 구조
+MVC모델
+
+Bootstrap
+	- app.php
+		* 라우팅 - /폴더/컨트롤러명
+					-> $nsp = \Controller\폴더\컨트롤러명Controller
+		* View 출력등
+		* 로그 기록
+		* 사이트의 핵심 로직
+	- autoload.php
+		* 필요한 파일(Controller, Component) 전체 자동 추가
+		* 따로 include 없이 파일만 추가하면 자동 로드
+	- boot.php
+		* 필요한 파일을 전부 추가
+			라우팅(Controller)
+			제반되는 Component, 함수
+		* 라우팅 처리 실행
+			(App::routes())
+			(사용자가 접근한 URL - Request URL)
+			 -> 적절한 Controller를 실행
+	- funcs.php
+		* 사이트 전역 필요한 공통 함수

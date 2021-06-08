@@ -1,0 +1,5 @@
+cURL
+	$ch = curl_init();
+	curl_setopt($ch, 옵션, 값);
+	curl_exec($ch);
+	curl_close($ch);

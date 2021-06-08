@@ -1,0 +1,52 @@
+객체
+	- 자료형
+		속성, 메서드로 구성된 자료형
+		
+클래스 구문
+	- 클래스
+	- 메서드
+	- 속성
+	- 인스턴스
+	- 생성자
+	- 정적 메서드
+	- 클래스 상수
+	
+클래스 확장(상속)
+	- extends
+	- 자식클래스 extends 부모클래스
+	- 자식 클래스는 부모의 접근 가능한(public, protected) 속성과 메서드에 접근 할 수 있다.
+
+접근 제한자
+	- 외부 접근 가능 여부
+		public - 외부, 내부 접근 가능
+		
+	- 외부접근X, 내부에서 접근 가능한
+		protected - 상속 받은 하위 클래스 내부에서 접근 가능
+		private
+		
+메서드 재정의
+	상위클래스의 동일한 메서드를 정의
+	
+	
+Composer -> 외부 패키지를 설치
+monolog/monolog
+guzzle
+
+	composer require 패키지명(벤더/패키지이름)
+	
+	composer remove 패키지명(벤더/패키지이름)
+	
+	1. filp/whoops -> 에러 예외 -> 보기 좋은 UI
+	2. monolog/monolog -> 로그 기록
+	
+	composer require filp/whoops
+	composer require monolog/monolog
+	
+	vendor라는 디렉토리에 설치
+	
+	vender/autoload.php -> 실제 사용 php에 include require 파일 추가 -> 설치된 모듈 사용
+	
+	/shop/vendor
+		-> vendor 업로드
+		
+	

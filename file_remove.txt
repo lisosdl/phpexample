@@ -1,0 +1,32 @@
+[root@yclee test]# ls -li
+합계 0
+4532 -rw-r--r--. 1 root root 0 2015-09-23 03:57 2015.0922.txt
+4531 -rw-r--r--. 1 root root 0 2015-09-23 03:53 ?ㄶ.txt
+
+# -i옵션으로 파일의 고유 숫자 값을 확인합니다.
+
+
+
+[root@yclee test]# find . -inum 4531 -exec rm -r {} \;
+
+find명령어를 통해 고유숫자 값을 입력하여 삭제합니다.
+
+
+
+[root@yclee test]# ls -li
+합계 0
+4532 -rw-r--r--. 1 root root 0 2015-09-23 03:57 2015.0922.txt
+
+파일명 깨진 파일 삭제된 것을 확인 할 수 있습니다.
+
+abc.txt 파일을 삭제
+rm abc.txt
+
+확장자가 txt인 모든 파일을 삭제
+rm *.txt
+
+dir1 디렉토리를 삭제
+rm -r dir1
+
+현재 디렉토리에 속한 모든 파일과 디렉토리를 삭제
+rm -r *

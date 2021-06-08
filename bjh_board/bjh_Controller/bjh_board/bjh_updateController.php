@@ -1,0 +1,2 @@
+<?php
+views("from");
